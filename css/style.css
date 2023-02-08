@@ -1,0 +1,1151 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Century Gothic";
+  src: url("../fonts/Century Gothic Bold.eot");
+  src: local("☺"), url("../fonts/Century Gothic Bold.woff") format("woff"), url("../fonts/Century Gothic Bold.ttf") format("truetype"), url("../fonts/Century Gothic Bold.svg") format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Century Gothic";
+  src: url("../fonts/Century Gothic.eot");
+  src: local("☺"), url("../fonts/Century Gothic.woff") format("woff"), url("../fonts/Century Gothic.ttf") format("truetype"), url("../fonts/Century Gothic.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  flex-direction: column;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Century Gothic";
+}
+
+a {
+  cursor: pointer;
+}
+
+.container {
+  position: relative;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.big-title {
+  color: #FF6C1B;
+  font-size: 100px;
+  font-family: "Century Gothic";
+  font-weight: 700;
+}
+
+.title {
+  color: #FF6C1B;
+  font-size: 48px;
+  font-family: "Century Gothic";
+  font-weight: 700;
+  line-height: 68px;
+}
+
+.df {
+  display: flex !important;
+}
+
+.dn {
+  display: none !important;
+}
+
+.db {
+  display: block !important;
+}
+
+.button-mod {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+
+.more, .hide {
+  display: none;
+  width: 100px;
+  height: 50px;
+  background-color: #fff;
+}
+.more span, .hide span {
+  color: #F88B4D;
+  position: relative;
+  top: 35%;
+  left: 35%;
+}
+.more:hover, .hide:hover {
+  background-color: #F88B4D;
+  box-shadow: 0px 0px 10px #fff;
+}
+.more:hover span, .hide:hover span {
+  color: #fff;
+}
+
+.arrow-left:hover, .arrow-right:hover {
+  box-shadow: 0px 0px 10px #fff;
+}
+
+article {
+  width: 25%;
+}
+article:hover {
+  background: linear-gradient(43.99deg, #FF6C1B -2.53%, #FFFFFF 143.71%);
+  box-shadow: 0px 0px 21px 7px rgba(223, 87, 12, 0.14);
+  border-radius: 30px 30px 0px 0px;
+  margin-top: -100px;
+}
+article:hover .slider__block {
+  padding: 45px 0px 70px 0px !important;
+}
+article:hover .slider__block .slider__block-name {
+  color: #fff;
+}
+article:hover .slider__block-button {
+  display: block !important;
+}
+article:hover .slider__block-button:first-child {
+  padding-bottom: 18px;
+}
+
+/*----------------------MAIN----------------------*/
+.header {
+  position: absolute;
+  width: 100%;
+  padding: 0px 20px;
+}
+.header__inner {
+  padding-top: 20px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.header__nav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+}
+.header__call, .header__mail {
+  padding-right: 10px;
+  background-image: url("../image/icons-header/header-curve.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header__call img, .header__mail img {
+  width: 30px;
+  height: 30px;
+}
+.header__call a, .header__mail a {
+  padding: 50px 0px;
+  box-sizing: border-box;
+}
+.header__call__call:hover, .header__mail__call:hover {
+  box-shadow: 0px 0px 10px #FF6C1B;
+}
+.header__contact {
+  width: 300px;
+  height: 60px;
+  background: linear-gradient(270deg, #FCCDB4 0%, #FF6C1B 104.95%);
+  box-shadow: 0px 0px 19px 9px rgba(223, 87, 12, 0.12);
+  border-radius: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  transform: rotate(270deg);
+  position: absolute;
+  top: 170%;
+  left: -105px;
+  z-index: 9;
+}
+.header__contact a {
+  color: #FFFFFF;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.main .intro {
+  background: url("../image/image-header/bg-2.jpg") no-repeat;
+  background-size: cover;
+}
+.main .intro__inner {
+  max-width: 100%;
+  min-height: 750px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 30px;
+  padding: 0px 20px 30px 20px;
+  position: relative;
+  z-index: 9;
+}
+.main .intro__upper-title {
+  color: #FF6C1B;
+  font-size: 58px;
+  font-family: "Century Gothic";
+  font-weight: 700;
+}
+.main .intro__title {
+  max-width: 1600px;
+}
+.main .choose::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 600px;
+  transform: translate(0px, 155px);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);
+}
+.main .choose .choose__inner {
+  display: flex;
+  width: 100%;
+}
+.main .choose__button-zahnarzte .choose__button-people {
+  box-sizing: border-box;
+}
+.main .choose__button-zahnarzte .choose__button-people div:first-child {
+  height: 80%;
+  position: absolute;
+  z-index: 2;
+  bottom: 0;
+  left: -50px;
+}
+.main .choose__button-zahnarzte__button-content:hover {
+  -webkit-animation-name: animationArrowWhite;
+          animation-name: animationArrowWhite;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+.main .choose__button-content {
+  display: flex;
+  gap: 20px;
+}
+.main .choose__button-content-arrow img {
+  width: 40px;
+  height: 40px;
+}
+.main .choose__button-content-text {
+  font-family: "Century Gothic";
+  font-size: 34px;
+  font-weight: 700;
+  box-sizing: border-box;
+  margin-right: 50px;
+}
+.main .choose__button-content-text a {
+  color: #FF6C1B;
+}
+.main .choose__button-people {
+  position: relative;
+  display: flex;
+  width: 30%;
+  height: 220px;
+}
+.main .choose__button-people img {
+  height: 90%;
+  position: relative;
+  top: 50px;
+}
+.main .choose .choose__button-patienten {
+  background-color: #FF6C1B;
+}
+.main .choose .choose__button-patienten .choose__button-content .choose__button-content-text {
+  margin-right: 0;
+}
+.main .choose .choose__button-patienten .choose__button-content .choose__button-content-text a {
+  color: #fff;
+}
+
+/*----------------------MAIN----------------------*/
+/*-------------------PATIENTEN--------------------*/
+.main .bg-3 {
+  background: url("../image/image-header/bg-3.jpg") no-repeat;
+  background-size: cover;
+}
+.main .dental-insurance::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 600px;
+  transform: translate(0px, 155px);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);
+}
+.main .dental-insurance__inner {
+  padding: 100px 20px;
+}
+.main .dental-insurance__inner .container {
+  display: flex;
+}
+.main .dental-insurance__content {
+  margin-right: 13%;
+}
+.main .dental-insurance__content-title {
+  max-width: 700px;
+  font-size: 48px;
+  line-height: 68px;
+  margin-bottom: 25px;
+}
+.main .dental-insurance__content-text {
+  max-width: 950px;
+  color: #7D3207;
+  font-size: 18px;
+  line-height: 36px;
+}
+.main .dental-insurance__servicevorteil {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  color: #FF6C1B;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.main .dental-insurance__servicevorteil div {
+  position: relative;
+}
+.main .dental-insurance__servicevorteil div::after {
+  content: "";
+  display: block;
+  width: 120px;
+  height: 2px;
+  background-color: #7D3207;
+  position: absolute;
+  top: 50%;
+  left: 230px;
+}
+.main .dental-insurance__image {
+  position: relative;
+  height: 100%;
+}
+.main .dental-insurance__image img {
+  width: 100%;
+}
+.main .dental-insurance__image::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 46%;
+  background: url("../image/image-page-2/decors/Decor.png") no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+}
+.main .additional-insurance {
+  background: #FF6C1B;
+}
+.main .additional-insurance__image {
+  position: relative;
+  width: 100%;
+}
+.main .additional-insurance__image img {
+  width: 100%;
+}
+.main .additional-insurance__image::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 29.7%;
+  background: url("../image/image-page-2/decors/Decor-o.png") center no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.main .additional-insurance__inner {
+  padding: 150px 20px;
+}
+.main .additional-insurance__block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+  margin-bottom: 78px;
+}
+.main .additional-insurance__title {
+  color: #fff;
+  width: 710px;
+}
+.main .additional-insurance__slider-button {
+  max-width: 500px;
+  height: 95px;
+  display: flex;
+  gap: 10px;
+}
+.main .additional-insurance__slider-button button {
+  background-color: #fff;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+}
+.main .additional-insurance .additional-insurance__slider {
+  background-color: #fff;
+  border-radius: 30px;
+  width: 100%;
+  max-height: 360px;
+  padding: 0px 30px;
+}
+.main .additional-insurance .additional-insurance__slider__items {
+  display: flex;
+  align-items: center;
+  padding: 50px 0px;
+  width: 100%;
+}
+.main .additional-insurance .slider__block {
+  max-width: 340px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 0px 67px 0px;
+  margin: 0 auto;
+}
+.main .additional-insurance .slider__block-icon {
+  width: 140px;
+  height: 100px;
+}
+.main .additional-insurance .slider__block-icon img {
+  width: 100%;
+  height: 100%;
+}
+.main .additional-insurance .slider__block-name {
+  font-size: 24px;
+  color: #FF6C1B;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: clamp(0.875rem, 0.739rem + 0.68vw, 1.25rem) 0px;
+}
+.main .additional-insurance .slider__block-info {
+  font-size: 20px;
+  color: #7D3207;
+  text-align: center;
+  max-width: 330px;
+  position: relative;
+  margin-bottom: 20px;
+}
+.main .additional-insurance .slider__block-info::before {
+  content: "";
+  display: block;
+  background: url("../image/image-page-2/decors/pdf.svg");
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.main .additional-insurance .slider__block-button {
+  display: none;
+  width: 100%;
+  transition: 0.3s ease-out;
+}
+.main .additional-insurance .slider__block-button button {
+  background-color: #fff;
+  width: 100%;
+  min-height: 60px;
+  color: #F88B4D;
+  transition: 0.2s ease-out;
+}
+.main .additional-insurance .slider__block-button button:hover {
+  box-shadow: 0px 0px 10px #fff;
+}
+.main .abrechung {
+  background-color: #FF6C1B;
+}
+.main .abrechung__inner {
+  display: flex;
+  justify-content: space-between;
+  padding: 125px 20px 60px 20px;
+  box-sizing: border-box;
+}
+.main .abrechung__info {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.main .abrechung__info-title {
+  color: #fff;
+}
+.main .abrechung__info-subtitle {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+  width: 350px;
+}
+.main .abrechung__info-text {
+  color: #7D3207;
+  width: 730px;
+  font-size: 24px;
+  line-height: 36px;
+}
+.main .abrechung__list {
+  width: 40%;
+  display: flex;
+  gap: 50px;
+}
+.main .abrechung__list-items {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 36px;
+}
+.main .abrechung__list-items a {
+  width: 100%;
+  color: #7D3207;
+  font-size: 24px;
+  position: relative;
+}
+.main .abrechung__list-items a:hover {
+  text-decoration: underline;
+}
+.main .abrechung__list-items a::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 10%;
+  left: -30px;
+  background: url("../image/image-page-2/decors/check.svg");
+  width: 19px;
+  height: 19px;
+}
+.main .abrechung__image {
+  position: relative;
+}
+.main .abrechung__image img {
+  width: 100%;
+}
+.main .abrechung__image::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 29.4%;
+  background: url("../image/image-page-2/decors/Decor-o.png") no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.main .our-service {
+  background: #FF6C1B;
+  color: #fff;
+}
+.main .our-service__inner {
+  padding: 100px 20px 60px 20px;
+  display: flex;
+}
+.main .our-service__info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 730px;
+  margin: 0px clamp(5rem, 3.39rem + 8.05vw, 10.938rem) 40px 0px;
+}
+.main .our-service__title {
+  font-size: 48px;
+  color: #fff;
+}
+.main .our-service__subtitle {
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.main .our-service__text {
+  font-size: 24px;
+  line-height: 36px;
+}
+.main .our-service__link {
+  line-height: 36px;
+  font-size: 24px;
+}
+.main .our-service__link p a {
+  color: #fff;
+}
+.main .our-service__link p a:hover {
+  text-decoration: underline;
+}
+.main .our-service__link-title {
+  margin-bottom: 30px;
+}
+.main .our-service__more {
+  width: 45%;
+  height: 100%;
+}
+.main .our-service__more-title {
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0px 0px 40px 0px;
+}
+.main .our-service__more-card {
+  display: flex;
+  gap: 20px;
+}
+.main .more-card__inner {
+  width: 100%;
+  height: 100%;
+  padding: 2em 2em;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.main .more-card__block {
+  max-width: 210px;
+  height: 365px;
+  border: 4px solid #fff;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+.main .more-card__block:hover {
+  background: linear-gradient(31.87deg, #F88B4D 1.07%, #FFFFFF 169.46%);
+  box-shadow: 0px 0px 21px 7px rgba(223, 87, 12, 0.04);
+  border-radius: 7px;
+  border: 4px solid #FF6C1B;
+}
+.main .more-card__title {
+  color: #fff;
+  font-weight: 700;
+  font-size: clamp(0.875rem, 0.773rem + 0.51vw, 1.25rem);
+  text-align: center;
+}
+@media (max-width: 1500px) {
+  .main .more-card__title {
+    font-size: 18px;
+  }
+}
+.main .more-card__button button {
+  background-color: #fff;
+  width: clamp(4.688rem, 2.993rem + 8.47vw, 10.938rem);
+  height: clamp(2.5rem, 1.992rem + 2.54vw, 4.375rem);
+  color: #FF6C1B;
+  transition: 0.5s;
+}
+.main .more-card__button button:hover {
+  box-shadow: 0px 0px 10px #FF6C1B;
+}
+.main .our-service__img {
+  position: relative;
+}
+.main .our-service__img img {
+  width: 100%;
+}
+.main .our-service__img img::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 29.5%;
+  background: url("../image/image-page-2/decors/Decor-o.png") contain no-repeat;
+  display: block;
+}
+
+.footer .contacts {
+  background: #FF6C1B;
+  min-height: 200px;
+}
+.footer .contacts__inner {
+  display: flex;
+  align-items: center;
+  width: 95%;
+  margin: 0 auto;
+  padding: 70px 20px;
+}
+.footer .contacts__location {
+  position: relative;
+  margin-right: 100px;
+}
+.footer .contacts__location-text a {
+  font-size: clamp(0.75rem, 0.563rem + 0.94vw, 1.5rem);
+  color: #fff;
+}
+.footer .contacts__location-text a:hover {
+  text-decoration: underline;
+}
+.footer .contacts__location-text::before {
+  content: "";
+  position: absolute;
+  right: 105%;
+  bottom: -15px;
+  display: block;
+  background-image: url("../image/image-page-2/icons/icons-content/location.svg");
+  background-size: cover;
+  width: 50px;
+  height: 55px;
+}
+.footer .contacts__phone {
+  position: relative;
+  margin-right: 120px;
+}
+.footer .contacts__phone-text a {
+  font-size: 20px;
+  color: #fff;
+}
+.footer .contacts__phone-text a:hover {
+  text-decoration: underline;
+}
+.footer .contacts__phone-text::before {
+  content: "";
+  position: absolute;
+  right: 105%;
+  top: -17px;
+  display: block;
+  background-image: url("../image/image-page-2/icons/icons-content/call.svg");
+  background-size: cover;
+  width: 55px;
+  height: 55px;
+}
+.footer .contacts__email {
+  margin-right: 20%;
+  position: relative;
+}
+.footer .contacts__email-text a {
+  font-size: 20px;
+  color: #fff;
+}
+.footer .contacts__email-text a:hover {
+  text-decoration: underline;
+}
+.footer .contacts__email-text::before {
+  content: "";
+  position: absolute;
+  right: 105%;
+  bottom: -20px;
+  display: block;
+  background-image: url("../image/image-page-2/icons/icons-content/mail.svg");
+  background-size: cover;
+  width: 73px;
+  height: 60px;
+}
+.footer .buttons__inner {
+  display: flex;
+  height: 135px;
+}
+.footer .buttons__impressum {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 2px solid #FF6C1B;
+  transition: 0.5s;
+}
+.footer .buttons__impressum a {
+  font-size: 24px;
+  font-weight: 700;
+  color: #FF6C1B;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+.footer .buttons__impressum:hover {
+  background-color: #FF6C1B;
+}
+.footer .buttons__impressum:hover a {
+  color: #fff;
+}
+.footer .buttons__datenschutz {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-left: 2px solid #FF6C1B;
+  transition: 0.5s;
+}
+.footer .buttons__datenschutz a {
+  font-size: 24px;
+  font-weight: 700;
+  color: #FF6C1B;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+.footer .buttons__datenschutz:hover {
+  background-color: #FF6C1B;
+}
+.footer .buttons__datenschutz:hover a {
+  color: #fff;
+}
+
+/*-------------------PATIENTEN--------------------*/
+/*-------------------------------------------------*/
+@media (max-width: 1400px) {
+  .container {
+    max-width: 1200px;
+  }
+  .big-title {
+    font-size: 72px;
+  }
+  .title {
+    font-size: 36px !important;
+  }
+  .text {
+    font-size: 16px !important;
+  }
+  .intro__upper-title {
+    font-size: 30px !important;
+  }
+  .dental-insurance__servicevorteil {
+    font-size: 18px !important;
+  }
+  .dental-insurance__servicevorteil div::after {
+    left: 150px !important;
+  }
+  .abrechung__info-text {
+    width: 85% !important;
+  }
+  .abrechung__info-subtitle {
+    font-size: 20px !important;
+  }
+  .abrechung__inner {
+    justify-content: space-around !important;
+  }
+  .abrechung__list-items a {
+    font-size: 20px !important;
+  }
+  .our-service__info {
+    margin: 0px 175px 40px 0px !important;
+  }
+  .our-service__inner {
+    flex-direction: column;
+  }
+  .our-service__info {
+    margin: 0px 0px 50px 0px !important;
+  }
+  .slider__block-info {
+    font-size: clamp(1rem, -0.5rem + 2vw, 1.25rem) !important;
+  }
+  .contacts__location-text::before {
+    content: "";
+    position: absolute;
+    right: 105%;
+    bottom: 0px;
+    display: block;
+    background-image: url("../image/image-page-2/icons/icons-content/location.svg");
+    background-size: cover;
+    width: 50px;
+    height: 55px;
+  }
+  .contacts__phone-text::before {
+    content: "";
+    position: absolute;
+    right: 105%;
+    top: 0px;
+    display: block;
+    background-image: url("../image/image-page-2/icons/icons-content/call.svg");
+    background-size: cover;
+    width: 55px;
+    height: 55px;
+  }
+  .contacts__email-text::before {
+    content: "";
+    position: absolute;
+    right: 105%;
+    bottom: -20px;
+    display: block;
+    background-image: url("../image/image-page-2/icons/icons-content/mail.svg");
+    background-size: contain;
+    width: 73px;
+    height: 60px;
+  }
+}
+@media (max-width: 1200px) {
+  .container {
+    max-width: 992px;
+  }
+  .big-title {
+    font-size: 64px;
+  }
+  .title {
+    font-size: 32px !important;
+  }
+  .intro__upper-title {
+    font-size: 22px !important;
+  }
+  .dental-insurance__content-text {
+    line-height: 28px !important;
+  }
+  .abrechung__list-items a {
+    font-size: 19px !important;
+  }
+  .our-service__subtitle {
+    font-size: 18px !important;
+  }
+  .our-service__text, .our-service__link {
+    font-size: 16px !important;
+    line-height: 24px !important;
+  }
+  .slider__block-name {
+    font-size: 20px !important;
+  }
+  .slider__block-info {
+    max-width: 200px !important;
+  }
+  .slider__block-button {
+    width: 90% !important;
+  }
+  article {
+    width: 33.3% !important;
+  }
+  article:first-child {
+    display: none;
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    max-width: 772px;
+  }
+  .big-title {
+    font-size: 54px;
+  }
+  .title {
+    font-size: 26px !important;
+    line-height: 46px;
+  }
+  .text {
+    font-size: 14px !important;
+  }
+  .intro__upper-title {
+    font-size: 22px !important;
+  }
+  .header__call, .header__mail {
+    width: 70px;
+    height: 70px;
+  }
+  .header__call img, .header__mail img {
+    width: 25px;
+    height: 25px;
+  }
+  .header__contact {
+    top: 200%;
+    left: -115px;
+  }
+  .abrechung__inner {
+    flex-direction: column;
+  }
+  .abrechung__info-subtitle {
+    font-size: 24px !important;
+  }
+  .abrechung__info, .abrechung__list {
+    width: 100% !important;
+  }
+  .abrechung__info-text {
+    width: 100% !important;
+    padding-bottom: 50px;
+  }
+  .abrechung__list-items a {
+    font-size: 20px !important;
+  }
+  .abrechung__list {
+    display: flex;
+  }
+  .our-service__subtitle {
+    font-size: 16px !important;
+  }
+  .additional-insurance__slider-button button {
+    background-color: #fff;
+    width: 80px !important;
+    height: 80px !important;
+    border-radius: 50%;
+  }
+  article {
+    width: 50% !important;
+  }
+  article:nth-child(2) {
+    display: none;
+  }
+  article .slider__block {
+    padding: 45px 0px 89px 0px !important;
+  }
+}
+@media (max-width: 772px) {
+  .container {
+    max-width: 577px;
+  }
+  .big-title {
+    font-size: 48px;
+  }
+  .title {
+    line-height: 36px;
+  }
+  .intro__upper-title {
+    font-size: 22px !important;
+  }
+  .dental-insurance__servicevorteil {
+    font-size: 16px !important;
+  }
+  .dental-insurance__content-title {
+    line-height: 36px !important;
+  }
+  .dental-insurance__content-text {
+    line-height: 26px !important;
+  }
+  .abrechung__list-items a {
+    font-size: 18px !important;
+  }
+  .our-service__more-card {
+    display: flex;
+    flex-direction: column;
+  }
+  .more-card__inner {
+    padding: 0.5em 1em !important;
+  }
+  .slider__block-name {
+    font-size: 16px !important;
+  }
+  .slider__block-info {
+    max-width: 200px !important;
+  }
+  .slider__block-button {
+    width: 70% !important;
+  }
+  article {
+    width: 50% !important;
+  }
+  article:nth-child(2) {
+    display: none;
+  }
+  article .slider__block {
+    padding: 45px 0px 105px 0px !important;
+  }
+}
+@media (max-width: 577px) {
+  .header__call, .header__mail {
+    width: 70px;
+    height: 70px;
+  }
+  .header__call img, .header__mail img {
+    width: 25px;
+    height: 25px;
+  }
+  .header__inner {
+    display: flex;
+  }
+  .big-title {
+    font-size: 44px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .more {
+    display: block;
+  }
+  .dental-insurance__servicevorteil {
+    display: none !important;
+  }
+  .abrechung__list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px !important;
+  }
+  .abrechung__list-items:nth-child(2) {
+    display: none;
+  }
+  .more-card__inner {
+    justify-content: none !important;
+    gap: 30px;
+  }
+  .our-service__more {
+    width: 100% !important;
+  }
+  .additional-insurance__block {
+    flex-direction: column;
+    align-items: flex-start !important;
+  }
+  .additional-insurance__title {
+    width: 100% !important;
+    margin-bottom: 20px;
+  }
+  article {
+    width: 100% !important;
+  }
+  article:nth-child(3) {
+    display: none;
+  }
+  article:hover .slider__block {
+    padding: 45px 0px 113px 0px !important;
+  }
+}
+/*-------------------------------------------------*/
