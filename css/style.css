@@ -245,6 +245,7 @@ article:hover .slider__block-button:first-child {
 .main .intro {
   background: url("../image/image-header/bg-2.jpg") no-repeat;
   background-size: cover;
+  width: 100%;
 }
 .main .intro__inner {
   max-width: 100%;
@@ -290,16 +291,6 @@ article:hover .slider__block-button:first-child {
   bottom: 0;
   left: -50px;
 }
-.main .choose__button-zahnarzte__button-content:hover {
-  -webkit-animation-name: animationArrowWhite;
-          animation-name: animationArrowWhite;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-direction: alternate;
-          animation-direction: alternate;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-}
 .main .choose__button-content {
   display: flex;
   gap: 20px;
@@ -313,7 +304,6 @@ article:hover .slider__block-button:first-child {
   font-size: 34px;
   font-weight: 700;
   box-sizing: border-box;
-  margin-right: 50px;
 }
 .main .choose__button-content-text a {
   color: #FF6C1B;
@@ -321,11 +311,11 @@ article:hover .slider__block-button:first-child {
 .main .choose__button-people {
   position: relative;
   display: flex;
-  width: 30%;
+  width: 40%;
   height: 220px;
 }
 .main .choose__button-people img {
-  height: 90%;
+  height: 85%;
   position: relative;
   top: 50px;
 }
@@ -333,7 +323,7 @@ article:hover .slider__block-button:first-child {
   background-color: #FF6C1B;
 }
 .main .choose .choose__button-patienten .choose__button-content .choose__button-content-text {
-  margin-right: 0;
+  margin-right: 0 !important;
 }
 .main .choose .choose__button-patienten .choose__button-content .choose__button-content-text a {
   color: #fff;
@@ -410,7 +400,7 @@ article:hover .slider__block-button:first-child {
   display: block;
   width: 100%;
   height: 46%;
-  background: url("../image/image-page-2/decors/Decor.png") no-repeat;
+  background: url("../image/image-patienten/decors/Decor.png") no-repeat;
   background-size: cover;
   position: absolute;
   top: 0;
@@ -430,7 +420,7 @@ article:hover .slider__block-button:first-child {
   display: block;
   width: 100%;
   height: 29.7%;
-  background: url("../image/image-page-2/decors/Decor-o.png") center no-repeat;
+  background: url("../image/image-patienten/decors/Decor-o.png") center no-repeat;
   background-size: contain;
   position: absolute;
   top: 0;
@@ -589,7 +579,7 @@ article:hover .slider__block-button:first-child {
   position: absolute;
   top: 10%;
   left: -30px;
-  background: url("../image/image-page-2/decors/check.svg");
+  background: url("../image/image-patienten/decors/check.svg");
   width: 19px;
   height: 19px;
 }
@@ -604,7 +594,7 @@ article:hover .slider__block-button:first-child {
   display: block;
   width: 100%;
   height: 29.4%;
-  background: url("../image/image-page-2/decors/Decor-o.png") no-repeat;
+  background: url("../image/image-patienten/decors/Decor-o.png") no-repeat;
   background-size: contain;
   position: absolute;
   top: 0;
@@ -709,20 +699,20 @@ article:hover .slider__block-button:first-child {
 .main .more-card__button button:hover {
   box-shadow: 0px 0px 10px #FF6C1B;
 }
-.main .our-service__img {
-  position: relative;
-}
 .main .our-service__img img {
+  position: relative;
   width: 100%;
 }
 .main .our-service__img img::before {
   content: "";
   position: absolute;
+  background-image: url("../image/image-patienten/decors/Decor-o.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   top: 0;
   left: 0;
   width: 100%;
   height: 29.5%;
-  background: url("../image/image-page-2/decors/Decor-o.png") contain no-repeat;
   display: block;
 }
 
@@ -754,7 +744,7 @@ article:hover .slider__block-button:first-child {
   right: 105%;
   bottom: -15px;
   display: block;
-  background-image: url("../image/image-page-2/icons/icons-content/location.svg");
+  background-image: url("../image/image-patienten/icons/icons-content/location.svg");
   background-size: cover;
   width: 50px;
   height: 55px;
@@ -776,7 +766,7 @@ article:hover .slider__block-button:first-child {
   right: 105%;
   top: -17px;
   display: block;
-  background-image: url("../image/image-page-2/icons/icons-content/call.svg");
+  background-image: url("../image/image-patienten/icons/icons-content/call.svg");
   background-size: cover;
   width: 55px;
   height: 55px;
@@ -798,7 +788,7 @@ article:hover .slider__block-button:first-child {
   right: 105%;
   bottom: -20px;
   display: block;
-  background-image: url("../image/image-page-2/icons/icons-content/mail.svg");
+  background-image: url("../image/image-patienten/icons/icons-content/mail.svg");
   background-size: cover;
   width: 73px;
   height: 60px;
@@ -868,32 +858,41 @@ article:hover .slider__block-button:first-child {
   .intro__upper-title {
     font-size: 30px !important;
   }
-  .dental-insurance__servicevorteil {
-    font-size: 18px !important;
+  .choose__inner .choose__button-content-text {
+    font-size: 30px;
   }
-  .dental-insurance__servicevorteil div::after {
-    left: 150px !important;
+  .choose__inner .choose__button-people div {
+    width: 80%;
   }
-  .abrechung__info-text {
-    width: 85% !important;
+  .choose .choose__button-people div {
+    width: 80%;
   }
-  .abrechung__info-subtitle {
-    font-size: 20px !important;
+  .choose .choose__button-people div img {
+    width: 90%;
   }
-  .abrechung__inner {
-    justify-content: space-around !important;
+  .dental-insurance__inner .container .dental-insurance__servicevorteil {
+    font-size: 18px;
   }
-  .abrechung__list-items a {
-    font-size: 20px !important;
+  .dental-insurance__inner .container .dental-insurance__servicevorteil div::after {
+    left: 150px;
   }
-  .our-service__info {
-    margin: 0px 175px 40px 0px !important;
+  .abrechung .container .abrechung__inner {
+    justify-content: space-around;
   }
-  .our-service__inner {
+  .abrechung .container .abrechung__inner .abrechung__info-text {
+    width: 85%;
+  }
+  .abrechung .container .abrechung__inner .abrechung__info-subtitle {
+    font-size: 20px;
+  }
+  .abrechung .container .abrechung__inner .abrechung__list-items a {
+    font-size: 20px;
+  }
+  .our-service .container .our-service__inner {
     flex-direction: column;
   }
-  .our-service__info {
-    margin: 0px 0px 50px 0px !important;
+  .our-service .container .our-service__inner .our-service__info {
+    margin: 0px 175px 40px 0px;
   }
   .slider__block-info {
     font-size: clamp(1rem, -0.5rem + 2vw, 1.25rem) !important;
@@ -945,33 +944,36 @@ article:hover .slider__block-button:first-child {
   .intro__upper-title {
     font-size: 22px !important;
   }
-  .dental-insurance__content-text {
-    line-height: 28px !important;
+  .dental-insurance__inner .container .dental-insurance__content-text {
+    line-height: 28px;
   }
-  .abrechung__list-items a {
-    font-size: 19px !important;
+  .additional-insurance__inner .additional-insurance__slider__items article {
+    width: 33.3%;
   }
-  .our-service__subtitle {
-    font-size: 18px !important;
-  }
-  .our-service__text, .our-service__link {
-    font-size: 16px !important;
-    line-height: 24px !important;
-  }
-  .slider__block-name {
-    font-size: 20px !important;
-  }
-  .slider__block-info {
-    max-width: 200px !important;
-  }
-  .slider__block-button {
-    width: 90% !important;
-  }
-  article {
-    width: 33.3% !important;
-  }
-  article:first-child {
+  .additional-insurance__inner .additional-insurance__slider__items article:first-child {
     display: none;
+  }
+  .additional-insurance__inner .additional-insurance__slider__items article .slider__block-name {
+    font-size: 20px;
+  }
+  .additional-insurance__inner .additional-insurance__slider__items article .slider__block-info {
+    max-width: 200px;
+  }
+  .additional-insurance__inner .additional-insurance__slider__items article .slider__block-button {
+    width: 90%;
+  }
+  .abrechung .container .abrechung__inner .abrechung__list-items a {
+    font-size: 19px;
+  }
+  .our-service .container .our-service__inner {
+    flex-direction: column;
+  }
+  .our-service .container .our-service__inner .our-service__info .our-service__subtitle {
+    font-size: 18px;
+  }
+  .our-service .container .our-service__inner .our-service__info .our-service__text, .our-service .container .our-service__inner .our-service__info .our-service__link {
+    font-size: 16px;
+    line-height: 24px;
   }
 }
 @media (max-width: 992px) {
@@ -988,9 +990,6 @@ article:hover .slider__block-button:first-child {
   .text {
     font-size: 14px !important;
   }
-  .intro__upper-title {
-    font-size: 22px !important;
-  }
   .header__call, .header__mail {
     width: 70px;
     height: 70px;
@@ -1003,42 +1002,47 @@ article:hover .slider__block-button:first-child {
     top: 200%;
     left: -115px;
   }
-  .abrechung__inner {
+  .intro__upper-title {
+    font-size: 22px !important;
+  }
+  .choose__inner .choose__button-content-arrow img {
+    width: 25px;
+    height: 25px;
+  }
+  .choose__inner .choose__button-content-text {
+    font-size: 21px;
+  }
+  .additional-insurance__inner .container .additional-insurance__block .additional-insurance__slider-button button {
+    width: 80px;
+    height: 80px;
+  }
+  .additional-insurance__inner .additional-insurance__slider__items article {
+    width: 50%;
+  }
+  .additional-insurance__inner .additional-insurance__slider__items article:nth-child(2) {
+    display: none;
+  }
+  .additional-insurance__inner .additional-insurance__slider__items article .slider__block {
+    padding: 45px 0px 89px 0px;
+  }
+  .abrechung .container .abrechung__inner {
     flex-direction: column;
   }
-  .abrechung__info-subtitle {
-    font-size: 24px !important;
-  }
-  .abrechung__info, .abrechung__list {
-    width: 100% !important;
-  }
-  .abrechung__info-text {
-    width: 100% !important;
+  .abrechung .container .abrechung__inner .abrechung__info-text {
+    width: 100%;
     padding-bottom: 50px;
   }
-  .abrechung__list-items a {
-    font-size: 20px !important;
+  .abrechung .container .abrechung__inner .abrechung__info-subtitle {
+    font-size: 24px;
   }
-  .abrechung__list {
-    display: flex;
+  .abrechung .container .abrechung__inner .abrechung__list-items a {
+    font-size: 20px;
+  }
+  .abrechung .container .abrechung__inner .abrechung__info, .abrechung .container .abrechung__inner .abrechung__list {
+    width: 100%;
   }
   .our-service__subtitle {
     font-size: 16px !important;
-  }
-  .additional-insurance__slider-button button {
-    background-color: #fff;
-    width: 80px !important;
-    height: 80px !important;
-    border-radius: 50%;
-  }
-  article {
-    width: 50% !important;
-  }
-  article:nth-child(2) {
-    display: none;
-  }
-  article .slider__block {
-    padding: 45px 0px 89px 0px !important;
   }
 }
 @media (max-width: 772px) {
@@ -1054,17 +1058,40 @@ article:hover .slider__block-button:first-child {
   .intro__upper-title {
     font-size: 22px !important;
   }
-  .dental-insurance__servicevorteil {
-    font-size: 16px !important;
+  .choose__inner .choose__button-content-arrow img {
+    width: 18px;
+    height: 18px;
   }
-  .dental-insurance__content-title {
-    line-height: 36px !important;
+  .choose__inner .choose__button-content-text {
+    font-size: clamp(0.875rem, 0.61rem + 1.33vw, 1.25rem);
+    margin-right: 25px;
   }
-  .dental-insurance__content-text {
-    line-height: 26px !important;
+  .choose .choose__button-content {
+    gap: 10px !important;
   }
-  .abrechung__list-items a {
-    font-size: 18px !important;
+  .dental-insurance__inner .container .dental-insurance__servicevorteil {
+    font-size: 16px;
+  }
+  .dental-insurance__inner .container .dental-insurance__content-title {
+    line-height: 36px;
+  }
+  .dental-insurance__inner .container .dental-insurance__content-text {
+    line-height: 26px;
+  }
+  .additional-insurance__inner .additional-insurance__slider__items article .slider__block {
+    padding: 45px 0px 105px 0px;
+  }
+  .additional-insurance__inner .additional-insurance__slider__items article .slider__block-name {
+    font-size: 16p;
+  }
+  .additional-insurance__inner .additional-insurance__slider__items article .slider__block-info {
+    max-width: 200px;
+  }
+  .additional-insurance__inner .additional-insurance__slider__items article .slider__block-button {
+    width: 70%;
+  }
+  .abrechung .container .abrechung__inner .abrechung__list-items a {
+    font-size: 18px;
   }
   .our-service__more-card {
     display: flex;
@@ -1072,24 +1099,6 @@ article:hover .slider__block-button:first-child {
   }
   .more-card__inner {
     padding: 0.5em 1em !important;
-  }
-  .slider__block-name {
-    font-size: 16px !important;
-  }
-  .slider__block-info {
-    max-width: 200px !important;
-  }
-  .slider__block-button {
-    width: 70% !important;
-  }
-  article {
-    width: 50% !important;
-  }
-  article:nth-child(2) {
-    display: none;
-  }
-  article .slider__block {
-    padding: 45px 0px 105px 0px !important;
   }
 }
 @media (max-width: 577px) {
@@ -1112,40 +1121,59 @@ article:hover .slider__block-button:first-child {
   .more {
     display: block;
   }
-  .dental-insurance__servicevorteil {
-    display: none !important;
+  .intro__title {
+    font-size: clamp(1.5rem, -0.056rem + 7.78vw, 2.75rem) !important;
   }
-  .abrechung__list {
-    display: flex;
-    flex-direction: column;
-    gap: 15px !important;
+  .intro__upper-title {
+    font-size: clamp(0.875rem, 0.252rem + 3.11vw, 1.375rem) !important;
   }
-  .abrechung__list-items:nth-child(2) {
+  .choose__inner {
+    min-height: 100px;
+  }
+  .choose__inner .choose__button-content-arrow img {
+    width: 25px;
+    height: 25px;
+  }
+  .choose__inner .choose__button-content-text {
+    font-size: 16px;
+  }
+  .choose__inner .choose__button-people {
     display: none;
   }
-  .more-card__inner {
-    justify-content: none !important;
-    gap: 30px;
+  .dental-insurance__inner .container .dental-insurance__servicevorteil {
+    display: none;
+  }
+  .additional-insurance__inner .container .additional-insurance__block {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .additional-insurance__inner .container .additional-insurance__block .additional-insurance__title {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .additional-insurance__inner .additional-insurance__slider__items article {
+    width: 100%;
+  }
+  .additional-insurance__inner .additional-insurance__slider__items article:nth-child(3) {
+    display: none;
+  }
+  .additional-insurance__inner .additional-insurance__slider__items article:hover .slider__block {
+    padding: 45px 0px 113px 0px;
+  }
+  .abrechung .container .abrechung__inner .abrechung__list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .abrechung .container .abrechung__inner .abrechung__list-items:nth-child(2) {
+    display: none;
   }
   .our-service__more {
     width: 100% !important;
   }
-  .additional-insurance__block {
-    flex-direction: column;
-    align-items: flex-start !important;
-  }
-  .additional-insurance__title {
-    width: 100% !important;
-    margin-bottom: 20px;
-  }
-  article {
-    width: 100% !important;
-  }
-  article:nth-child(3) {
-    display: none;
-  }
-  article:hover .slider__block {
-    padding: 45px 0px 113px 0px !important;
+  .more-card__inner {
+    justify-content: none !important;
+    gap: 30px;
   }
 }
 /*-------------------------------------------------*/
