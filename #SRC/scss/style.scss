@@ -92,7 +92,7 @@ article{
 
 
 /*----------------------MAIN----------------------*/
-.header {
+	.header {
 	position: absolute;
 	width: 100%;
 	padding: 0px 20px;
@@ -152,8 +152,8 @@ article{
 			font-weight: 700;
 		}
 	}
-}
-.main{
+	}
+	.main{
 	& .intro{
 		background: url('../image/image-header/bg-2.jpg') no-repeat;
 		background-size: cover;
@@ -248,8 +248,9 @@ article{
 			}
 		}
 	}
-}
+	}
 /*----------------------MAIN----------------------*/
+
 
 /*-------------------PATIENTEN--------------------*/
 .main{
@@ -630,84 +631,82 @@ article{
 		}
 	}
 	.our-service__img{
-		& img{
-			position: relative;
-			width: 100%;
-		}
-		& img::before{
-			content: '';
-			position: absolute;
-			background-image: url('../image/image-patienten/decors/Decor-o.png');
-  		background-repeat: no-repeat;
-  		background-size: cover;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 29.5%;
-			display: block;
-		}
+		position: relative;
+			& img{
+				width: 100%;
+			}
+			&::before{
+				content: "";
+				display: block;
+				width: 100%;
+				height: 54%;
+				background: url('../image/image-patienten/decors/Decor-o.png') no-repeat;
+				background-size: cover;
+				position: absolute;
+				top: 0;
+			}
 	}
-}
-.footer{
-	.contacts {
-		background: #FF6C1B;
-		min-height: 200px;
-		&__inner {
-			display: flex;
-			align-items: center;
-			width: 95%;
-			margin: 0 auto;
-			padding: 70px 20px;
-		}
-		&__location {
+	}
+	.footer{
+		.contacts {
+			background: #FF6C1B;
+			min-height: 200px;
+			&__inner {
+				display: flex;
+				align-items: center;
+				width: 95%;
+				margin: 0 auto;
+				padding: 70px 20px;
+			}
+			&__location {
 			position: relative;
 			margin-right: 100px;
-			&-text {
-				& a{
-					font-size: clamp(0.75rem, 0.563rem + 0.94vw, 1.5rem);
-					color: #fff;
-				}
-				& a:hover{
-					text-decoration: underline;
-				}
-			}
-			&-text::before{
-				content: '';
-				position: absolute;
-				right: 105%;
-				bottom: -15px;
-				display: block;
-				background-image: url('../image/image-patienten/icons/icons-content/location.svg');
-				background-size: cover;
-				width: 50px;
-				height: 55px;
-			}
-		}
-		&__phone {
-			position: relative;
-			margin-right: 120px;
-			&-text {
-				& a{
-					font-size: 20px;
-					color: #fff;
-				}
-				& a:hover{
-					text-decoration: underline;
+				&-text {
+						& a{
+							font-size: clamp(0.75rem, 0.563rem + 0.94vw, 1.5rem);
+							color: #fff;
+						}
+						& a:hover{
+							text-decoration: underline;
+						}
+					}
+				&-text::before{
+					content: '';
+					position: absolute;
+					right: 105%;
+					bottom: -15px;
+					display: block;
+					background-image: url('../image/image-patienten/icons/icons-content/location.svg');
+					background-size: contain;
+					width: 50px;
+					height: 55px;
 				}
 			}
-			&-text::before{
-				content: '';
-				position: absolute;
-				right: 105%;
-				top: -17px;
-				display: block;
-				background-image: url('../image/image-patienten/icons/icons-content/call.svg');
-				background-size: cover;
-				width: 55px;
-				height: 55px;
+			&__phone {
+				position: relative;
+				margin-right: 120px;
+				&-text {
+					& a{
+						font-size: 20px;
+						color: #fff;
+					}
+					& a:hover{
+						text-decoration: underline;
+					}
+				}
+				&-text::before{
+					content: '';
+					position: absolute;
+					right: 105%;
+					top: -17px;
+					display: block;
+					background-image: url('../image/image-patienten/icons/icons-content/call.svg');
+					background-size: contain;
+					width: 55px;
+					height: 55px;
+				}
 			}
-		}
-		&__email {
+			&__email {
 			margin-right: 20%;
 			position: relative;
 			&-text {
@@ -726,12 +725,13 @@ article{
 				bottom: -20px;
 				display: block;
 				background-image: url('../image/image-patienten/icons/icons-content/mail.svg');
-				background-size: cover;
+				background-repeat: no-repeat;
+				background-size: contain;
 				width: 73px;
 				height: 60px;
 			}
+			}
 		}
-	}
 	.buttons {
 		&__inner {
 			display: flex;
@@ -745,7 +745,7 @@ article{
 			border-right: 2px solid #FF6C1B;
 			transition: 0.5s;
 			& a {
-				font-size: 24px;
+				font-size: clamp(1rem, 0.818rem + 0.91vw, 1.5rem);
 				font-weight: 700;
 				color: #FF6C1B;
 				text-transform: uppercase;
@@ -766,7 +766,7 @@ article{
 			border-left: 2px solid #FF6C1B;
 			transition: 0.5s;
 			& a {
-				font-size: 24px;
+				font-size: clamp(1rem, 0.818rem + 0.91vw, 1.5rem);
 				font-weight: 700;
 				color: #FF6C1B;
 				text-transform: uppercase;
@@ -780,8 +780,63 @@ article{
 			}
 		}
 	}
-}
+	}
 /*-------------------PATIENTEN--------------------*/
+
+
+/*-------------------ZANHARTE---------------------*/
+.main {
+	.bg-1 {
+		background: url('../image/image-header/bg-1.jpg') cover no-repeat;
+	}
+	.intro {
+		&__inner {}
+		&__title {}
+	}
+	.dental-insurance {
+		&__inner {}
+		&__content {
+			&-title {}
+			&-text {}
+		}
+		&__servicevorteil {}
+		&__image-zanharte {
+			position: relative;
+			& img{
+				width: 100%;
+			}
+			&::before{
+				content: "";
+				display: block;
+				width: 100%;
+				height: 25%;
+				background: url('../image/image-patienten/decors/Decor.png') no-repeat;
+				background-size: cover;
+				position: absolute;
+				top: 0;
+			}
+		}
+	}
+	.our-service__img-zanharte{
+		position: relative;
+			& img{
+				width: 100%;
+			}
+			&::before{
+				content: "";
+				display: block;
+				width: 100%;
+				height: 45%;
+				background: url('../image/image-patienten/decors/Decor-o.png') no-repeat;
+				background-size: cover;
+				position: absolute;
+				top: 0;
+			}
+	}
+}
+
+/*-------------------ZANHARTE---------------------*/
+
 
 /*-------------------------------------------------*/
 @media (max-width: 1400px){
@@ -862,44 +917,50 @@ article{
 
 	.slider__block-info{font-size: clamp(1rem, -0.5rem + 2vw, 1.25rem) !important;}
 
-	.contacts{
-		&__location {
+	.footer{
+		.contacts {
+			&__location {
+			margin-right: 90px;
+				&-text {
+						& a{
+							font-size: 20px;
+							color: #fff;
+						}
+					}
+				&-text::before{
+					bottom: 2px;
+					width: 45px;
+					height: 50px;
+				}
+			}
+			&__phone {
+				margin-right: 100px;
+				&-text {
+					& a{
+						font-size: 20px;
+						color: #fff;
+					}
+				}
+				&-text::before{
+					top: 2px;
+					width: 50px;
+					height: 50px;
+				}
+			}
+			&__email {
+			margin-right: 20%;
+			position: relative;
+			&-text {
+				& a{
+					font-size: 20px;
+					color: #fff;
+				}	
+			}
 			&-text::before{
-				content: '';
-				position: absolute;
-				right: 105%;
-				bottom: 0px;
-				display: block;
-				background-image: url('../image/image-page-2/icons/icons-content/location.svg');
-				background-size: cover;
-				width: 50px;
+				bottom: -18px;
+				width: 60px;
 				height: 55px;
 			}
-		}
-		&__phone {
-			&-text::before{
-				content: '';
-				position: absolute;
-				right: 105%;
-				top: 0px;
-				display: block;
-				background-image: url('../image/image-page-2/icons/icons-content/call.svg');
-				background-size: cover;
-				width: 55px;
-				height: 55px;
-			}
-		}
-		&__email {
-			&-text::before{
-				content: '';
-				position: absolute;
-				right: 105%;
-				bottom: -20px;
-				display: block;
-				background-image: url('../image/image-page-2/icons/icons-content/mail.svg');
-				background-size: contain;
-				width: 73px;
-				height: 60px;
 			}
 		}
 	}
@@ -974,6 +1035,58 @@ article{
 						line-height: 24px;
 					}
 				}
+			}
+		}
+	}
+	.footer{
+		.contacts {
+			&__logo{
+				& img{
+					width: 150%;
+				}
+			}
+			&__location {
+			margin-right: 90px;
+				&-text {
+						& a{
+							font-size: 18px;
+							color: #fff;
+						}
+					}
+				&-text::before{
+					bottom: 2px;
+					width: 40px;
+					height: 45px;
+				}
+			}
+			&__phone {
+				margin-right: 100px;
+				&-text {
+					& a{
+						font-size: 18px;
+						color: #fff;
+					}
+				}
+				&-text::before{
+					top: 2px;
+					width: 45px;
+					height: 45px;
+				}
+			}
+			&__email {
+			margin-right: 20%;
+			position: relative;
+			&-text {
+				& a{
+					font-size: 18px;
+					color: #fff;
+				}	
+			}
+			&-text::before{
+				bottom: -18px;
+				width: 55px;
+				height: 50px;
+			}
 			}
 		}
 	}
@@ -1060,10 +1173,60 @@ article{
 			}
 		}
 	}
+	.footer{
+		.contacts {
+			&__logo{
+				& img{
+					width: 190%;
+				}
+			}
+			&__location {
+			margin-right: 80px;
+				&-text {
+						& a{
+							font-size: 16px;
+							color: #fff;
+						}
+					}
+				&-text::before{
+					bottom: 2px;
+					width: 35px;
+					height: 40px;
+				}
+			}
+			&__phone {
+				margin-right: 100px;
+				&-text {
+					& a{
+						font-size: 16px;
+						color: #fff;
+					}
+				}
+				&-text::before{
+					top: 2px;
+					width: 40px;
+					height: 40px;
+				}
+			}
+			&__email {
+			margin-right: 20%;
+			position: relative;
+			&-text {
+				& a{
+					font-size: 16px;
+					color: #fff;
+				}	
+			}
+			&-text::before{
+				bottom: -18px;
+				width: 45px;
+				height: 50px;
+			}
+			}
+		}
+	}
 
 	.our-service__subtitle{font-size: 16px !important;}
-
-
 }
 @media (max-width: 772px){
 	.container{max-width: 577px;}
@@ -1153,7 +1316,63 @@ article{
 	.more-card__inner{
 		padding: 0.5em 1em !important;
 	}
-
+	.footer{
+		.contacts {
+			&__inner{
+				flex-direction: column;
+				align-items: flex-start;
+				gap: 40px;
+			}
+			&__logo{
+				& img{
+					width: 100%;
+				}
+			}
+			&__location {
+			margin-left: 30px;
+				&-text {
+						& a{
+							font-size: 18px;
+							color: #fff;
+						}
+					}
+				&-text::before{
+					bottom: 0px;
+					width: 35px;
+					height: 40px;
+				}
+			}
+			&__phone {
+				margin-left: 30px;
+				&-text {
+					& a{
+						font-size: 18px;
+						color: #fff;
+					}
+				}
+				&-text::before{
+					top: -10px;
+					width: 35px;
+					height: 35px;
+				}
+			}
+			&__email {
+			margin-left: 30px;
+			position: relative;
+			&-text {
+				& a{
+					font-size: 18px;
+					color: #fff;
+				}	
+			}
+			&-text::before{
+				bottom: -18px;
+				width: 40px;
+				height: 45px;
+			}
+			}
+		}
+	}
 }
 @media (max-width: 577px){
 	.header{
@@ -1250,6 +1469,9 @@ article{
 	}
 	.our-service__more{
 		width: 100% !important;
+	}
+	.our-service__info{
+		margin: 0px clamp(3.125rem, 1.569rem + 7.78vw, 4.375rem) 40px 0px !important;
 	}
 	.more-card__inner{
 		justify-content: none !important;

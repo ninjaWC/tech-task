@@ -699,21 +699,21 @@ article:hover .slider__block-button:first-child {
 .main .more-card__button button:hover {
   box-shadow: 0px 0px 10px #FF6C1B;
 }
-.main .our-service__img img {
+.main .our-service__img {
   position: relative;
+}
+.main .our-service__img img {
   width: 100%;
 }
-.main .our-service__img img::before {
+.main .our-service__img::before {
   content: "";
-  position: absolute;
-  background-image: url("../image/image-patienten/decors/Decor-o.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 29.5%;
   display: block;
+  width: 100%;
+  height: 54%;
+  background: url("../image/image-patienten/decors/Decor-o.png") no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
 }
 
 .footer .contacts {
@@ -745,7 +745,7 @@ article:hover .slider__block-button:first-child {
   bottom: -15px;
   display: block;
   background-image: url("../image/image-patienten/icons/icons-content/location.svg");
-  background-size: cover;
+  background-size: contain;
   width: 50px;
   height: 55px;
 }
@@ -767,7 +767,7 @@ article:hover .slider__block-button:first-child {
   top: -17px;
   display: block;
   background-image: url("../image/image-patienten/icons/icons-content/call.svg");
-  background-size: cover;
+  background-size: contain;
   width: 55px;
   height: 55px;
 }
@@ -789,7 +789,8 @@ article:hover .slider__block-button:first-child {
   bottom: -20px;
   display: block;
   background-image: url("../image/image-patienten/icons/icons-content/mail.svg");
-  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: contain;
   width: 73px;
   height: 60px;
 }
@@ -806,7 +807,7 @@ article:hover .slider__block-button:first-child {
   transition: 0.5s;
 }
 .footer .buttons__impressum a {
-  font-size: 24px;
+  font-size: clamp(1rem, 0.818rem + 0.91vw, 1.5rem);
   font-weight: 700;
   color: #FF6C1B;
   text-transform: uppercase;
@@ -827,7 +828,7 @@ article:hover .slider__block-button:first-child {
   transition: 0.5s;
 }
 .footer .buttons__datenschutz a {
-  font-size: 24px;
+  font-size: clamp(1rem, 0.818rem + 0.91vw, 1.5rem);
   font-weight: 700;
   color: #FF6C1B;
   text-transform: uppercase;
@@ -841,6 +842,44 @@ article:hover .slider__block-button:first-child {
 }
 
 /*-------------------PATIENTEN--------------------*/
+/*-------------------ZANHARTE---------------------*/
+.main .bg-1 {
+  background: url("../image/image-header/bg-1.jpg") cover no-repeat;
+}
+.main .dental-insurance__image-zanharte {
+  position: relative;
+}
+.main .dental-insurance__image-zanharte img {
+  width: 100%;
+}
+.main .dental-insurance__image-zanharte::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 25%;
+  background: url("../image/image-patienten/decors/Decor.png") no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+}
+.main .our-service__img-zanharte {
+  position: relative;
+}
+.main .our-service__img-zanharte img {
+  width: 100%;
+}
+.main .our-service__img-zanharte::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 45%;
+  background: url("../image/image-patienten/decors/Decor-o.png") no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+}
+
+/*-------------------ZANHARTE---------------------*/
 /*-------------------------------------------------*/
 @media (max-width: 1400px) {
   .container {
@@ -897,38 +936,42 @@ article:hover .slider__block-button:first-child {
   .slider__block-info {
     font-size: clamp(1rem, -0.5rem + 2vw, 1.25rem) !important;
   }
-  .contacts__location-text::before {
-    content: "";
-    position: absolute;
-    right: 105%;
-    bottom: 0px;
-    display: block;
-    background-image: url("../image/image-page-2/icons/icons-content/location.svg");
-    background-size: cover;
+  .footer .contacts__location {
+    margin-right: 90px;
+  }
+  .footer .contacts__location-text a {
+    font-size: 20px;
+    color: #fff;
+  }
+  .footer .contacts__location-text::before {
+    bottom: 2px;
+    width: 45px;
+    height: 50px;
+  }
+  .footer .contacts__phone {
+    margin-right: 100px;
+  }
+  .footer .contacts__phone-text a {
+    font-size: 20px;
+    color: #fff;
+  }
+  .footer .contacts__phone-text::before {
+    top: 2px;
     width: 50px;
-    height: 55px;
+    height: 50px;
   }
-  .contacts__phone-text::before {
-    content: "";
-    position: absolute;
-    right: 105%;
-    top: 0px;
-    display: block;
-    background-image: url("../image/image-page-2/icons/icons-content/call.svg");
-    background-size: cover;
-    width: 55px;
-    height: 55px;
+  .footer .contacts__email {
+    margin-right: 20%;
+    position: relative;
   }
-  .contacts__email-text::before {
-    content: "";
-    position: absolute;
-    right: 105%;
-    bottom: -20px;
-    display: block;
-    background-image: url("../image/image-page-2/icons/icons-content/mail.svg");
-    background-size: contain;
-    width: 73px;
-    height: 60px;
+  .footer .contacts__email-text a {
+    font-size: 20px;
+    color: #fff;
+  }
+  .footer .contacts__email-text::before {
+    bottom: -18px;
+    width: 60px;
+    height: 55px;
   }
 }
 @media (max-width: 1200px) {
@@ -974,6 +1017,46 @@ article:hover .slider__block-button:first-child {
   .our-service .container .our-service__inner .our-service__info .our-service__text, .our-service .container .our-service__inner .our-service__info .our-service__link {
     font-size: 16px;
     line-height: 24px;
+  }
+  .footer .contacts__logo img {
+    width: 150%;
+  }
+  .footer .contacts__location {
+    margin-right: 90px;
+  }
+  .footer .contacts__location-text a {
+    font-size: 18px;
+    color: #fff;
+  }
+  .footer .contacts__location-text::before {
+    bottom: 2px;
+    width: 40px;
+    height: 45px;
+  }
+  .footer .contacts__phone {
+    margin-right: 100px;
+  }
+  .footer .contacts__phone-text a {
+    font-size: 18px;
+    color: #fff;
+  }
+  .footer .contacts__phone-text::before {
+    top: 2px;
+    width: 45px;
+    height: 45px;
+  }
+  .footer .contacts__email {
+    margin-right: 20%;
+    position: relative;
+  }
+  .footer .contacts__email-text a {
+    font-size: 18px;
+    color: #fff;
+  }
+  .footer .contacts__email-text::before {
+    bottom: -18px;
+    width: 55px;
+    height: 50px;
   }
 }
 @media (max-width: 992px) {
@@ -1041,6 +1124,46 @@ article:hover .slider__block-button:first-child {
   .abrechung .container .abrechung__inner .abrechung__info, .abrechung .container .abrechung__inner .abrechung__list {
     width: 100%;
   }
+  .footer .contacts__logo img {
+    width: 190%;
+  }
+  .footer .contacts__location {
+    margin-right: 80px;
+  }
+  .footer .contacts__location-text a {
+    font-size: 16px;
+    color: #fff;
+  }
+  .footer .contacts__location-text::before {
+    bottom: 2px;
+    width: 35px;
+    height: 40px;
+  }
+  .footer .contacts__phone {
+    margin-right: 100px;
+  }
+  .footer .contacts__phone-text a {
+    font-size: 16px;
+    color: #fff;
+  }
+  .footer .contacts__phone-text::before {
+    top: 2px;
+    width: 40px;
+    height: 40px;
+  }
+  .footer .contacts__email {
+    margin-right: 20%;
+    position: relative;
+  }
+  .footer .contacts__email-text a {
+    font-size: 16px;
+    color: #fff;
+  }
+  .footer .contacts__email-text::before {
+    bottom: -18px;
+    width: 45px;
+    height: 50px;
+  }
   .our-service__subtitle {
     font-size: 16px !important;
   }
@@ -1099,6 +1222,51 @@ article:hover .slider__block-button:first-child {
   }
   .more-card__inner {
     padding: 0.5em 1em !important;
+  }
+  .footer .contacts__inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+  }
+  .footer .contacts__logo img {
+    width: 100%;
+  }
+  .footer .contacts__location {
+    margin-left: 30px;
+  }
+  .footer .contacts__location-text a {
+    font-size: 18px;
+    color: #fff;
+  }
+  .footer .contacts__location-text::before {
+    bottom: 0px;
+    width: 35px;
+    height: 40px;
+  }
+  .footer .contacts__phone {
+    margin-left: 30px;
+  }
+  .footer .contacts__phone-text a {
+    font-size: 18px;
+    color: #fff;
+  }
+  .footer .contacts__phone-text::before {
+    top: -10px;
+    width: 35px;
+    height: 35px;
+  }
+  .footer .contacts__email {
+    margin-left: 30px;
+    position: relative;
+  }
+  .footer .contacts__email-text a {
+    font-size: 18px;
+    color: #fff;
+  }
+  .footer .contacts__email-text::before {
+    bottom: -18px;
+    width: 40px;
+    height: 45px;
   }
 }
 @media (max-width: 577px) {
@@ -1170,6 +1338,9 @@ article:hover .slider__block-button:first-child {
   }
   .our-service__more {
     width: 100% !important;
+  }
+  .our-service__info {
+    margin: 0px clamp(3.125rem, 1.569rem + 7.78vw, 4.375rem) 40px 0px !important;
   }
   .more-card__inner {
     justify-content: none !important;
